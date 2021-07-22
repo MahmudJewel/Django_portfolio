@@ -36,7 +36,7 @@ html{
 
 	font-family: 'Sansita Swashed', cursive;
 	color: white;	
-	background: #151515 url("../static/img/bg.jpg"); /*no-repeat center top;*/
+	background: #151515 url("../static/img/bg.png"); /*no-repeat center top;*/
 	background-repeat: repeat;
 	background-position: center ;
 	background-size: cover;

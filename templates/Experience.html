@@ -1,23 +1,118 @@
-<!-- 
+<!--
 '***********************   Jewel Mahmud   ***********************************'
 '***********************  CSE-13th,MBSTU  ***********************************'
 '*********************** Date: 20-07-2021 ***********************************'
 '********* Title: Making complete portfolio with Django *********************'
 -->
-
 {% load static %}
 <html lang="en">
 	<head>
 		{% include 'head.html' %}
 	</head>
-	<body>
+	<body >
 		
-		<div>
-			{% include 'nav.html' %}
+	<!--===================== start  Navigations   =========================-->
+		<nav>{% include 'nav.html' %}</nav>
+	<!--===================== end  Navigations   =========================-->
+	<!--===================== start  Experience   ========================-->
+		<section id="resume" style="font-family: 'Sansita Swashed', cursive;
+			/*color: white;
+			background: #151515 url('../static/img/bg.png'); /*no-repeat center top;*/
+			background-repeat: repeat;
+			background-position: center ;
+			background-size: cover;
+			background-attachment: fixed;
+			width: 100%;
+			height: auto;
+			min-height: auto;">
+			<div class="exp-overall">
+				<div class="credential center-text">
+					<h3>Resume</h3>
+					<h1>More of my credential</h1>
+				</div>
+				<div class="work">
+					<div class="head">
+						<h1>Work Experience</h1>
+					</div>
+					<div class="inner">
+						<div class="details">
+							<div class="company">
+								<i class="fa fa-briefcase icon"></i>
+								<span>Sep,2018-Present</span>
+								<h3>Full Stack Developer</h3>
+								<h4>Demo location</h4>
+								<p>Demo</p>
+							</div>
+							<div class="company">
+								<i class="fa fa-briefcase icon"></i>
+								<span>Sep,2018-Present</span>
+								<h3>Full Stack developer</h3>
+								<h4>Demo location</h4>
+								<p>Demo</p>
+							</div>
+							<div class="company">
+								<i class="fa fa-briefcase icon"></i>
+								<span>Sep,2018-Present</span>
+								<h3>Full Stack developer</h3>
+								<h4>Demo location</h4>
+								<p>Demo</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="edu">
+					<div class="head" >
+						<h1>Education</h1>
+					</div>
+					<div class="inner">
+						<div class="details">
+							<div class="company">
+								<i class="fa fa-graduation-cap icon"></i>
+								<span>January 2016-January 2021</span>
+								<h3>BSc Engineering</h3>
+								<h4>MBSTU</h4>
+								<p>I have completed my BSc in<br> Computer Science and Engineering <br>from CSE department of <br>MBSTU, Santosh, Tangail.</p>
+							</div>
+							<div class="company">
+								<i class="fa fa-graduation-cap icon"></i>
+								<span>July 2012 - May 2014</span>
+								<h3>HSC</h3>
+								<h4>Hazi Asmat College</h4>
+								<p>I have completed my HSC in Science from<br> Hazi Asmat College, <br>Bhairab, Kishoregonj.</p>
+							</div>
+							<div class="company">
+								<i class="fa fa-graduation-cap icon"></i>
+								<span>January 2010 - February 2012</span>
+								<h3>SSC</h3>
+								<h4>Kalika Prashad High School</h4>
+								<p>I have completed my SSC in Science from<br> Kalika Prashad High School, <br>Bhairab, Kishoregonj.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--================== Start Next-Previous =====================-->
+		<div class="f-social" style="padding-top: 100px;"> <!--I called footer to design -->
+			<ul>
+				<li>
+					<a href="/about" class="previous" title="previous">
+						<i class="fas fa-chevron-circle-left"></i>
+					</a>
+				</li>
+				<li>
+					<a href="/portfolio" class="next" title="next">
+						<i class="fas fa-chevron-circle-right"></i>
+					</a>
+				</li>
+			</ul>
 		</div>
-
-	<div>
-	{% include 'footer.html' %}
-	</div>
+		<!--=================== End Next-Previous ======================-->
+		</section>
+	<!--===================== end  Experience   =========================-->
+	<footer>
+		{% include 'footer.html' %}
+	</footer>
 </body>
 </html>

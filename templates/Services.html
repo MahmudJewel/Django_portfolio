@@ -10,11 +10,87 @@
 	<head>
 		{% include 'head.html' %}
 	</head>
-	<body>
+	<body style="font-family: 'Sansita Swashed', cursive;
+	color: white;	
+	background: #151515 url('../static/img/bg.jpg'); /*no-repeat center top;*/
+	background-repeat: repeat;
+	background-position: center ;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	min-height: auto;">
 		
-		<div>
-			{% include 'nav.html' %}
+	<!--===================== start  Navigations   =========================-->
+		<nav>{% include 'nav.html' %}</nav>
+	<!--===================== end  Navigations   =========================-->
+
+		<!--===================== start  Services   =========================-->
+	<section id="service">
+		<div class="top center-text" data-aos="fade-up" data-aos-delay="300" >
+			<div class="">
+				<h3> S E R V I C E S</h3>
+			</div>
+			<div>
+				<h2>I can do the followings for you</h2>
+			</div>
 		</div>
+		<div class="down" data-aos="fade-right" data-aos-delay="300" >
+
+			<div class="name">
+				<div> 
+					<i class="fab fa-connectdevelop"></i>
+				</div> 
+				<div>
+					<h3>Web<br>Development</h3>
+				</div>
+			</div>
+
+			<div class="name">
+				<div> 
+					<i class="fab fa-connectdevelop"></i>
+				</div> 
+				<div>
+					<h3>Web<br>Design</h3>
+				</div>
+			</div>
+
+			<div class="name">
+				<div> 
+					<i class="fab fa-connectdevelop"></i>
+				</div> 
+				<div>
+					<h3>Software<br>Development</h3>
+				</div>
+			</div>
+
+			<div class="name">
+				<div> 
+					<i class="fab fa-connectdevelop"></i>
+				</div> 
+				<div>
+					<h3>Consultancy</h3>
+				</div>
+			</div>
+		</div>
+		<!--================== Start Next-Previous =====================-->
+		<div class="f-social" style="padding-top: 100px;"> <!--I called footer to design -->
+			<ul>
+				<li>
+					<a href="/portfolio" class="previous" title="previous">
+						<i class="fas fa-chevron-circle-left"></i>
+					</a>
+				</li>
+				<li>
+					<a href="/contact" class="next" title="next">
+						<i class="fas fa-chevron-circle-right"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--=================== End Next-Previous ======================-->
+	</section>
+		<!--===================== end  Services   =========================-->
 
 	<div>
 	{% include 'footer.html' %}

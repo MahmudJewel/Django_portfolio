@@ -1,0 +1,16 @@
+.oneline{
+	display: flex;
+}
+.equal{
+	flex: 1;
+}
+.center-items{
+	align-items: center
+}
+.center-text{
+	text-align: center;
+}
+
+.flex-three{
+	flex: 3;
+}

@@ -1,24 +1,74 @@
-<!-- 
+<!--
 '***********************   Jewel Mahmud   ***********************************'
 '***********************  CSE-13th,MBSTU  ***********************************'
 '*********************** Date: 20-07-2021 ***********************************'
 '********* Title: Making complete portfolio with Django *********************'
 -->
-
 {% load static %}
 <html lang="en">
 	<head>
 		{% include 'head.html' %}
 	</head>
-	<body>
+	<body style="font-family: 'Sansita Swashed', cursive;
+		color: white;
+		background: #151515 url('../static/img/bg.jpg'); /*no-repeat center top;*/
+		background-repeat: repeat;
+		background-position: center ;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: auto;
+		min-height: auto;">
 		
-		<div>
-			{% include 'nav.html' %}
+		<!--===================== start  Navigations   =========================-->
+	<nav>{% include 'nav.html' %}</nav>
+	<!--===================== end  Navigations   =========================-->
+	<!--===================== start  My Work   =========================-->
+	<section id="portfolio">
+		<div class="top center-text" data-aos="fade-right" data-aos-delay="300" >
+			<div class="">
+				<h3> P O R T F O L I O</h3>
+			</div>
+			<div>
+				<h2>Here is some of my works</h2>
+			</div>
 		</div>
-
-	<div>
-	{% include 'footer.html' %}
-	</div>
-	
-</body>
+		<div class="projects" data-aos="fade-up" data-aos-delay="300"  >
+			<div class="projects" data-aos="fade-up" data-aos-delay="300"  >
+				{% for app in apps %}
+				<div class="screenshot">
+					<div class="over">
+						<a href="{{app.link}}" target="_blank">
+							{{app.title}}
+						</a>
+						<p>{{app.desc}}</p>
+					</div>
+					<img src="{{app.img}}">
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<!--================== Start Next-Previous =====================-->
+		<div class="f-social" style="padding-top: 100px;"> <!--I called footer to design -->
+			<ul>
+				<li>
+					<a href="/experience" class="previous" title="previous">
+						<i class="fas fa-chevron-circle-left"></i>
+					</a>
+				</li>
+				<li>
+					<a href="/services" class="next" title="next">
+						<i class="fas fa-chevron-circle-right"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--=================== End Next-Previous ======================-->
+		</section>
+		<!--===================== end  My Work   =========================-->
+		<div>
+			{% include 'footer.html' %}
+		</div>
+		
+	</body>
 </html>

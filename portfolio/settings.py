@@ -125,7 +125,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'djangoStatic') #collectstatic==> automatically created 'djangoStatic' folder.
+STATIC_ROOT = os.path.join(BASE_DIR, 'djangoAutoStatic') #collectstatic==> automatically created 'djangoStatic' folder.
 #End added
 
 # Default primary key field type
