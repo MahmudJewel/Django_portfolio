@@ -35,6 +35,12 @@ def portfolio(request):
 	jsPortfolio.desc="JavaScript Project"
 	jsPortfolio.img='../static/img/project-img/js-portfolio.jpg'
 
+	djPortfolio=projects()
+	djPortfolio.link= "https://github.com/MahmudJewel/portfolioWithDjango"
+	djPortfolio.title="Portfolio-Django"
+	djPortfolio.desc="Python Project"
+	djPortfolio.img='../static/img/project-img/dj-portfolio.jpg'
+
 	djWeather=projects()
 	djWeather.link= "https://github.com/MahmudJewel/Weather"
 	djWeather.title="Weather Detector"
@@ -103,6 +109,7 @@ def portfolio(request):
 	apps=[
 			jsPortfolio,
 			djTodo,
+			djPortfolio,
 			djWeather,
 			djTakingNotes,
 			djFamouseQuotes,
