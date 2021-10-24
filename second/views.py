@@ -29,6 +29,12 @@ def experience(request):
 	return render(request,'Experience.html')
 
 def portfolio(request):
+	djShoppingMall=projects()
+	djShoppingMall.link= "https://github.com/MahmudJewel/E_commerce"
+	djShoppingMall.title="Shopping Mall"
+	djShoppingMall.desc="Python Project"
+	djShoppingMall.img='../static/img/project-img/dj-shoppingMall.jpg'
+
 	djOnlineExam=projects()
 	djOnlineExam.link= "https://github.com/MahmudJewel/online_exam"
 	djOnlineExam.title="Online Exam"
@@ -113,6 +119,7 @@ def portfolio(request):
 	jsBookList.img='../static/img/project-img/js-booklist.jpg'
 
 	apps=[
+			djShoppingMall,
 			djOnlineExam,
 			jsPortfolio,
 			djTodo,
