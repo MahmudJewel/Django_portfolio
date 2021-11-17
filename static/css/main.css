@@ -272,15 +272,19 @@ nav{
 		align-items: center;
 	}
 	#home .left{
-	/*margin: 5rem 0 0 0;*/
+	margin: 5rem 0 0 0;
 	text-align: center;
-}
+	}
 }
 @media only screen and (max-width: 768px){
 	#home .left-right .right img{
 	height: 300px;
 	width: 400px;
-}
+	}
+
+	#home .left{
+	margin: 0 0 5rem 0;
+	}
 }
 @media only screen and (max-width: 600px){
 	#home .left h6{
