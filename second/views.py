@@ -47,6 +47,12 @@ def portfolio(request):
 	djOnlineExam.desc="Django Project"
 	djOnlineExam.img='../static/img/project-img/dj-onlineExam.jpg'
 
+	reactCal=projects()
+	reactCal.link= "https://github.com/MahmudJewel/react-calculator"
+	reactCal.title="React Calculator"
+	reactCal.desc="React Project"
+	reactCal.img='../static/img/project-img/react-calculator.jpg'
+
 	jsPortfolio=projects()
 	jsPortfolio.link= "https://github.com/MahmudJewel/portfolio"
 	jsPortfolio.title="Portfolio"
@@ -128,6 +134,7 @@ def portfolio(request):
 			djShoppingMall,
 			djBlog,
 			djOnlineExam,
+			reactCal,
 			jsPortfolio,
 			djTodo,
 			djPortfolio,
