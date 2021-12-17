@@ -32,13 +32,19 @@ def portfolio(request):
 	djShoppingMall=projects()
 	djShoppingMall.link= "https://github.com/MahmudJewel/E_commerce"
 	djShoppingMall.title="Shopping Mall"
-	djShoppingMall.desc="Python Project"
+	djShoppingMall.desc="Django Project"
 	djShoppingMall.img='../static/img/project-img/dj-shoppingMall.jpg'
+
+	djBlog=projects()
+	djBlog.link= "https://github.com/MahmudJewel/techvillain"
+	djBlog.title="Personal Blog(tech villain)"
+	djBlog.desc="Django Project"
+	djBlog.img='../static/img/project-img/dj-blog.jpg'
 
 	djOnlineExam=projects()
 	djOnlineExam.link= "https://github.com/MahmudJewel/online_exam"
 	djOnlineExam.title="Online Exam"
-	djOnlineExam.desc="Python Project"
+	djOnlineExam.desc="Django Project"
 	djOnlineExam.img='../static/img/project-img/dj-onlineExam.jpg'
 
 	jsPortfolio=projects()
@@ -50,38 +56,38 @@ def portfolio(request):
 	djPortfolio=projects()
 	djPortfolio.link= "https://github.com/MahmudJewel/portfolioWithDjango"
 	djPortfolio.title="Portfolio-Django"
-	djPortfolio.desc="Python Project"
+	djPortfolio.desc="Django Project"
 	djPortfolio.img='../static/img/project-img/dj-portfolio.jpg'
 
 	djWeather=projects()
 	djWeather.link= "https://github.com/MahmudJewel/Weather"
 	djWeather.title="Weather Detector"
-	djWeather.desc="Python Project"
+	djWeather.desc="Django Project"
 	djWeather.img='../static/img/project-img/dj-weather.png'
 
 	djTodo=projects()
 	djTodo.link= "https://github.com/MahmudJewel/ToDoApps"
 	djTodo.title="ToDoApps"
-	djTodo.desc="Python Project"
+	djTodo.desc="Django Project"
 	djTodo.img='../static/img/project-img/dj-todo.jpg'
 
 	djTakingNotes=projects()
 	djTakingNotes.link= "https://github.com/MahmudJewel/notes-taking"
 	djTakingNotes.title="Taking Notes"
-	djTakingNotes.desc="Python Project"
+	djTakingNotes.desc="Django Project"
 	djTakingNotes.img='../static/img/project-img/dj-takingnotes.jpg'
 
 	djStudentForm=projects()
 	djStudentForm.link= "https://github.com/MahmudJewel/studentForm"
 	djStudentForm.title="Student Form"
-	djStudentForm.desc="Python Project"
+	djStudentForm.desc="Django Project"
 	djStudentForm.img='../static/img/project-img/dj-st.jpg'
 
 
 	djFamouseQuotes=projects()
 	djFamouseQuotes.link= "https://github.com/MahmudJewel/Quotes"
 	djFamouseQuotes.title="Famous Quotes"
-	djFamouseQuotes.desc="Python Project"
+	djFamouseQuotes.desc="Django Project"
 	djFamouseQuotes.img='../static/img/project-img/dj-quotes.jpg'
 
 
@@ -120,6 +126,7 @@ def portfolio(request):
 
 	apps=[
 			djShoppingMall,
+			djBlog,
 			djOnlineExam,
 			jsPortfolio,
 			djTodo,
