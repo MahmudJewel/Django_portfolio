@@ -29,6 +29,7 @@ def experience(request):
 	return render(request,'Experience.html')
 
 def portfolio(request):
+	# django projects 
 	djShoppingMall=projects()
 	djShoppingMall.link= "https://github.com/MahmudJewel/E_commerce"
 	djShoppingMall.title="Shopping Mall"
@@ -46,18 +47,6 @@ def portfolio(request):
 	djOnlineExam.title="Online Exam"
 	djOnlineExam.desc="Django Project"
 	djOnlineExam.img='../static/img/project-img/dj-onlineExam.jpg'
-
-	reactCal=projects()
-	reactCal.link= "https://github.com/MahmudJewel/react-calculator"
-	reactCal.title="React Calculator"
-	reactCal.desc="React Project"
-	reactCal.img='../static/img/project-img/react-calculator.jpg'
-
-	jsPortfolio=projects()
-	jsPortfolio.link= "https://github.com/MahmudJewel/portfolio"
-	jsPortfolio.title="Portfolio"
-	jsPortfolio.desc="JavaScript Project"
-	jsPortfolio.img='../static/img/project-img/js-portfolio.jpg'
 
 	djPortfolio=projects()
 	djPortfolio.link= "https://github.com/MahmudJewel/portfolioWithDjango"
@@ -96,20 +85,25 @@ def portfolio(request):
 	djFamouseQuotes.desc="Django Project"
 	djFamouseQuotes.img='../static/img/project-img/dj-quotes.jpg'
 
+	# react projects 
+	reactCal=projects()
+	reactCal.link= "https://github.com/MahmudJewel/react-calculator"
+	reactCal.title="React Calculator"
+	reactCal.desc="React Project"
+	reactCal.img='../static/img/project-img/react-calculator.jpg'
 
-	jvPharmacyStore=projects()
-	jvPharmacyStore.link= "https://github.com/MahmudJewel/Pharmacy-Store-Management-System"
-	jvPharmacyStore.title="Pharmacy Store Management System"
-	jvPharmacyStore.desc="Java Project"
-	jvPharmacyStore.img='../static/img/project-img/jv-pharmacy.jpg'
+	reactForm=projects()
+	reactForm.link= "https://github.com/MahmudJewel/react-form"
+	reactForm.title="React Form"
+	reactForm.desc="React Project"
+	reactForm.img='../static/img/project-img/react-form.jpg'
 
-
-	jvFileTransfer=projects()
-	jvFileTransfer.link= "https://github.com/MahmudJewel/File-transferring-app"
-	jvFileTransfer.title="File Transferring app"
-	jvFileTransfer.desc="Java Project"
-	jvFileTransfer.img='../static/img/project-img/jv-file-transferring.jpg'
-
+	# javascript projects 
+	jsPortfolio=projects()
+	jsPortfolio.link= "https://github.com/MahmudJewel/portfolio"
+	jsPortfolio.title="Portfolio"
+	jsPortfolio.desc="JavaScript Project"
+	jsPortfolio.img='../static/img/project-img/js-portfolio.jpg'
 
 	jsRandomQuotes=projects()
 	jsRandomQuotes.link= "https://mahmudjewel.github.io/Random-Quotes/"
@@ -130,12 +124,28 @@ def portfolio(request):
 	jsBookList.desc="JavaScript Project"
 	jsBookList.img='../static/img/project-img/js-booklist.jpg'
 
+	# java projects 
+	jvPharmacyStore=projects()
+	jvPharmacyStore.link= "https://github.com/MahmudJewel/Pharmacy-Store-Management-System"
+	jvPharmacyStore.title="Pharmacy Store Management System"
+	jvPharmacyStore.desc="Java Project"
+	jvPharmacyStore.img='../static/img/project-img/jv-pharmacy.jpg'
+
+
+	jvFileTransfer=projects()
+	jvFileTransfer.link= "https://github.com/MahmudJewel/File-transferring-app"
+	jvFileTransfer.title="File Transferring app"
+	jvFileTransfer.desc="Java Project"
+	jvFileTransfer.img='../static/img/project-img/jv-file-transferring.jpg'
+
+
 	apps=[
 			djShoppingMall,
 			djBlog,
 			djOnlineExam,
 			reactCal,
 			jsPortfolio,
+			reactForm,
 			djTodo,
 			djPortfolio,
 			djWeather,
