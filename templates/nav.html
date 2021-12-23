@@ -11,14 +11,14 @@
     </a>
         
         <div class="nav_right rm_nav">
-            <div ><a href="/" >Home</a></div>
-            <div ><a href="/about">About</a></div>
+            <div ><a href="/" class="{% if request.path == '/' %}active{% endif %}" >Home</a></div>
+            <div ><a href="/about" class="{% if 'about' in request.path %}active{% endif %}">About</a></div>
         <!--
             <div ><a href="/experience">Experience</a></div>
         -->
-            <div><a href="/portfolio">Portfolio</a></div>
-            <div><a href="/services">Services</a></div>
-            <div><a href="/contact">Contact</a></div>
+            <div><a href="/portfolio" class="{% if 'portfolio' in request.path %}active{% endif %}">Portfolio</a></div>
+            <div><a href="/services" class="{% if 'services' in request.path %}active{% endif %}">Services</a></div>
+            <div><a href="/contact" class="{% if 'contact' in request.path %}active{% endif %}">Contact</a></div>
             <div><a class="btn btn-outline-success btn-secondary" href="https://techvillain.herokuapp.com" target="_blank">blog</a></div>
         </div>
 

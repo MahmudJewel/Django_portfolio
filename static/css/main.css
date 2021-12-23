@@ -122,9 +122,10 @@ nav{
 	/*background-color: #00cc99;*/
 	transition: all .3s ease;
 }
-.nav_right a:active{
-	color: #ff3385;
-	background-color: #00cc99;
+
+.nav_right div .active{
+	color:aqua;
+	/* background-color: #00cc99; */
 }
 
  .logo-link{
