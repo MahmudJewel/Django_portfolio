@@ -255,9 +255,14 @@ nav{
 }
 
 #home .left-right .right img{
-	height: 400px;
+	max-height: 550px;
+	max-width: 400px;
+	margin-left: 1.875rem; /* 25 px */
+	
+	/* for transparent cng pic  */
+	/* height: 400px;
 	width: 550px;
-	border-radius: 45%;
+	border-radius: 45%; */
 	/*border-style: dotted;
 	border-color: aqua;*/
 }
