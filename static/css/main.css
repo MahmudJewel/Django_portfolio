@@ -756,7 +756,8 @@ nav{
 
 #portfolio .projects .screenshot:hover .over{
 	opacity: .5;
-	height: 75%;
+	height: 72%;
+	border-radius: 25px 25px 0px 0px;
 	transition: all 0.3s ease;
 }
 

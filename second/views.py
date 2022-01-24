@@ -42,6 +42,12 @@ def portfolio(request):
 	djBlog.desc="Django Project"
 	djBlog.img='../static/img/project-img/dj-blog.jpg'
 
+	djGrocery=projects()
+	djGrocery.link= "https://github.com/MahmudJewel/Juwel-Mahmud_iTQAN-Django-Task"
+	djGrocery.title="Grocery Shop"
+	djGrocery.desc="Django Project"
+	djGrocery.img='../static/img/project-img/dj-grocery1.jpg'
+
 	djOnlineExam=projects()
 	djOnlineExam.link= "https://github.com/MahmudJewel/online_exam"
 	djOnlineExam.title="Online Exam"
@@ -142,6 +148,7 @@ def portfolio(request):
 	dj_project_list=[
 			djShoppingMall,
 			djBlog,
+			djGrocery,
 			djOnlineExam,
 			djTodo,
 			djPortfolio,

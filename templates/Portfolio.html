@@ -39,7 +39,7 @@
 
         <div class="row">
           <div class="row tab text-center d-flex justify-content-center mb-4">
-        <div class="col" >
+            <div class="col">
               <a
                 class="tablinks btn btn-outline-primary m-1"
                 style="color: white"
@@ -47,41 +47,46 @@
                 id="defaultOpen"
               >
                 Django
-      </a>
+              </a>
               <a
                 class="tablinks btn btn-outline-primary m-1"
                 style="color: white"
                 onclick="openCity(event, 'React')"
               >
                 React
-    </a>
+              </a>
               <a
                 class="tablinks btn btn-outline-primary m-1"
                 style="color: white"
                 onclick="openCity(event, 'JavaScript')"
               >
                 JavaScript
-  </a>
+              </a>
               <a
                 class="tablinks btn btn-outline-primary m-1"
                 style="color: white"
                 onclick="openCity(event, 'Bootstrap')"
               >
                 Bootstrap
-</a>
+              </a>
               <a
                 class="tablinks btn btn-outline-primary m-1"
                 style="color: white"
                 onclick="openCity(event, 'Java')"
               >
                 Java
-</a>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <!-- django project lis  -->
-      <div id="Python" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+      <div
+        id="Python"
+        class="tabcontent projects"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div class="projects" data-aos="fade-up" data-aos-delay="300">
           {% for app in dj_project_list %}
           <div class="screenshot">
@@ -90,15 +95,20 @@
               <p>{{app.desc}}</p>
             </div>
             <img src="{{app.img}}" />
-            <div style=" 
-                        margin: 0 1rem 0 1rem; 
-                        padding: 1rem;
-                        border-radius: 0 0 25px 25px;
-                        box-shadow: 2px 2px 12px #737373;
-                        width: 300px;">
+            <div
+              style="
+                margin: 0 1rem 0 1rem;
+                padding: 1rem;
+                border-radius: 0 0 25px 25px;
+                box-shadow: 2px 2px 12px #737373;
+                width: 300px;
+              "
+            >
               <h6>{{app.title}}</h6>
               <!-- <p>Django project</p> -->
-              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+              <a href="{{app.link}}" target="_blank" class="btn btn-success"
+                >About</a
+              >
             </div>
           </div>
 
@@ -107,7 +117,12 @@
       </div>
 
       <!-- React project lis  -->
-      <div id="React" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+      <div
+        id="React"
+        class="tabcontent projects"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div class="projects" data-aos="fade-up" data-aos-delay="300">
           {% for app in react_project_list %}
           <div class="screenshot">
@@ -116,15 +131,20 @@
               <p>{{app.desc}}</p>
             </div>
             <img src="{{app.img}}" />
-            <div style=" 
-                        margin: 0 1rem 0 1rem; 
-                        padding: 1rem;
-                        border-radius: 0 0 25px 25px;
-                        box-shadow: 2px 2px 12px #737373;
-                        width: 300px;">
+            <div
+              style="
+                margin: 0 1rem 0 1rem;
+                padding: 1rem;
+                border-radius: 0 0 25px 25px;
+                box-shadow: 2px 2px 12px #737373;
+                width: 300px;
+              "
+            >
               <h6>{{app.title}}</h6>
               <!-- <p>Django project</p> -->
-              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+              <a href="{{app.link}}" target="_blank" class="btn btn-success"
+                >About</a
+              >
             </div>
           </div>
 
@@ -133,7 +153,12 @@
       </div>
 
       <!-- Javascript project lis  -->
-      <div id="JavaScript" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+      <div
+        id="JavaScript"
+        class="tabcontent projects"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div class="projects" data-aos="fade-up" data-aos-delay="300">
           {% for app in js_project_list %}
           <div class="screenshot">
@@ -142,15 +167,20 @@
               <p>{{app.desc}}</p>
             </div>
             <img src="{{app.img}}" />
-            <div style=" 
-                        margin: 0 1rem 0 1rem; 
-                        padding: 1rem;
-                        border-radius: 0 0 25px 25px;
-                        box-shadow: 2px 2px 12px #737373;
-                        width: 300px;">
+            <div
+              style="
+                margin: 0 1rem 0 1rem;
+                padding: 1rem;
+                border-radius: 0 0 25px 25px;
+                box-shadow: 2px 2px 12px #737373;
+                width: 300px;
+              "
+            >
               <h6>{{app.title}}</h6>
               <!-- <p>Django project</p> -->
-              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+              <a href="{{app.link}}" target="_blank" class="btn btn-success"
+                >About</a
+              >
             </div>
           </div>
 
@@ -159,7 +189,12 @@
       </div>
 
       <!-- Bootstrap project lis  -->
-      <div id="Bootstrap" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+      <div
+        id="Bootstrap"
+        class="tabcontent projects"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div class="projects" data-aos="fade-up" data-aos-delay="300">
           {% for app in bootstrap_project_list %}
           <div class="screenshot">
@@ -168,15 +203,20 @@
               <p>{{app.desc}}</p>
             </div>
             <img src="{{app.img}}" />
-            <div style=" 
-                        margin: 0 1rem 0 1rem; 
-                        padding: 1rem;
-                        border-radius: 0 0 25px 25px;
-                        box-shadow: 2px 2px 12px #737373;
-                        width: 300px;">
+            <div
+              style="
+                margin: 0 1rem 0 1rem;
+                padding: 1rem;
+                border-radius: 0 0 25px 25px;
+                box-shadow: 2px 2px 12px #737373;
+                width: 300px;
+              "
+            >
               <h6>{{app.title}}</h6>
               <!-- <p>Django project</p> -->
-              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+              <a href="{{app.link}}" target="_blank" class="btn btn-success"
+                >About</a
+              >
             </div>
           </div>
 
@@ -185,7 +225,12 @@
       </div>
 
       <!-- Java project lis  -->
-      <div id="Java" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+      <div
+        id="Java"
+        class="tabcontent projects"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div class="projects" data-aos="fade-up" data-aos-delay="300">
           {% for app in java_project_list %}
           <div class="screenshot">
@@ -194,15 +239,20 @@
               <p>{{app.desc}}</p>
             </div>
             <img src="{{app.img}}" />
-            <div style=" 
-                        margin: 0 1rem 0 1rem; 
-                        padding: 1rem;
-                        border-radius: 0 0 25px 25px;
-                        box-shadow: 2px 2px 12px #737373;
-                        width: 300px;">
+            <div
+              style="
+                margin: 0 1rem 0 1rem;
+                padding: 1rem;
+                border-radius: 0 0 25px 25px;
+                box-shadow: 2px 2px 12px #737373;
+                width: 300px;
+              "
+            >
               <h6>{{app.title}}</h6>
               <!-- <p>Django project</p> -->
-              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+              <a href="{{app.link}}" target="_blank" class="btn btn-success"
+                >About</a
+              >
             </div>
           </div>
 
