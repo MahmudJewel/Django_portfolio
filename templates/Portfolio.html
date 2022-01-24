@@ -35,10 +35,159 @@
         <div>
           <h2>Here is some of my works</h2>
         </div>
+        <!-- for tabs  -->
+
+        <div class="row">
+          <div class="row tab text-center d-flex justify-content-center mb-4">
+        <div class="col" >
+              <a
+                class="tablinks btn btn-outline-primary m-1"
+                style="color: white"
+                onclick="openCity(event, 'Python')"
+                id="defaultOpen"
+              >
+                Django
+      </a>
+              <a
+                class="tablinks btn btn-outline-primary m-1"
+                style="color: white"
+                onclick="openCity(event, 'React')"
+              >
+                React
+    </a>
+              <a
+                class="tablinks btn btn-outline-primary m-1"
+                style="color: white"
+                onclick="openCity(event, 'JavaScript')"
+              >
+                JavaScript
+  </a>
+              <a
+                class="tablinks btn btn-outline-primary m-1"
+                style="color: white"
+                onclick="openCity(event, 'Bootstrap')"
+              >
+                Bootstrap
+</a>
+              <a
+                class="tablinks btn btn-outline-primary m-1"
+                style="color: white"
+                onclick="openCity(event, 'Java')"
+              >
+                Java
+</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="projects" data-aos="fade-up" data-aos-delay="300">
+      <!-- django project lis  -->
+      <div id="Python" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
         <div class="projects" data-aos="fade-up" data-aos-delay="300">
-          {% for app in apps %}
+          {% for app in dj_project_list %}
+          <div class="screenshot">
+            <div class="over">
+              <a href="{{app.link}}" target="_blank"> {{app.title}} </a>
+              <p>{{app.desc}}</p>
+            </div>
+            <img src="{{app.img}}" />
+            <div style=" 
+                        margin: 0 1rem 0 1rem; 
+                        padding: 1rem;
+                        border-radius: 0 0 25px 25px;
+                        box-shadow: 2px 2px 12px #737373;
+                        width: 300px;">
+              <h6>{{app.title}}</h6>
+              <!-- <p>Django project</p> -->
+              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- React project lis  -->
+      <div id="React" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+        <div class="projects" data-aos="fade-up" data-aos-delay="300">
+          {% for app in react_project_list %}
+          <div class="screenshot">
+            <div class="over">
+              <a href="{{app.link}}" target="_blank"> {{app.title}} </a>
+              <p>{{app.desc}}</p>
+            </div>
+            <img src="{{app.img}}" />
+            <div style=" 
+                        margin: 0 1rem 0 1rem; 
+                        padding: 1rem;
+                        border-radius: 0 0 25px 25px;
+                        box-shadow: 2px 2px 12px #737373;
+                        width: 300px;">
+              <h6>{{app.title}}</h6>
+              <!-- <p>Django project</p> -->
+              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Javascript project lis  -->
+      <div id="JavaScript" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+        <div class="projects" data-aos="fade-up" data-aos-delay="300">
+          {% for app in js_project_list %}
+          <div class="screenshot">
+            <div class="over">
+              <a href="{{app.link}}" target="_blank"> {{app.title}} </a>
+              <p>{{app.desc}}</p>
+            </div>
+            <img src="{{app.img}}" />
+            <div style=" 
+                        margin: 0 1rem 0 1rem; 
+                        padding: 1rem;
+                        border-radius: 0 0 25px 25px;
+                        box-shadow: 2px 2px 12px #737373;
+                        width: 300px;">
+              <h6>{{app.title}}</h6>
+              <!-- <p>Django project</p> -->
+              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Bootstrap project lis  -->
+      <div id="Bootstrap" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+        <div class="projects" data-aos="fade-up" data-aos-delay="300">
+          {% for app in bootstrap_project_list %}
+          <div class="screenshot">
+            <div class="over">
+              <a href="{{app.link}}" target="_blank"> {{app.title}} </a>
+              <p>{{app.desc}}</p>
+            </div>
+            <img src="{{app.img}}" />
+            <div style=" 
+                        margin: 0 1rem 0 1rem; 
+                        padding: 1rem;
+                        border-radius: 0 0 25px 25px;
+                        box-shadow: 2px 2px 12px #737373;
+                        width: 300px;">
+              <h6>{{app.title}}</h6>
+              <!-- <p>Django project</p> -->
+              <a href="{{app.link}}" target="_blank" class="btn btn-success">About</a>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Java project lis  -->
+      <div id="Java" class="tabcontent projects" data-aos="fade-up" data-aos-delay="300">
+        <div class="projects" data-aos="fade-up" data-aos-delay="300">
+          {% for app in java_project_list %}
           <div class="screenshot">
             <div class="over">
               <a href="{{app.link}}" target="_blank"> {{app.title}} </a>
@@ -77,6 +226,27 @@
         </ul>
       </div>
       <!--=================== End Next-Previous ======================-->
+      <!-- for tab  -->
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
     </section>
     <!--===================== end  My Work   =========================-->
     <div>{% include 'footer.html' %}</div>

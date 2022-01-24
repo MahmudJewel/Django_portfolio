@@ -139,27 +139,45 @@ def portfolio(request):
 	jvFileTransfer.img='../static/img/project-img/jv-file-transferring.jpg'
 
 
-	apps=[
+	dj_project_list=[
 			djShoppingMall,
 			djBlog,
 			djOnlineExam,
-			reactCal,
-			jsPortfolio,
-			reactForm,
 			djTodo,
 			djPortfolio,
 			djWeather,
 			djTakingNotes,
 			djFamouseQuotes,
 			djStudentForm,
-			jvPharmacyStore,
-			jvFileTransfer,
+		]
+	
+	react_project_list=[
+			reactCal,
+			reactForm,
+		]
+ 
+	js_project_list=[
+			jsPortfolio,
 			jsBookList,
 			jsRandomQuotes,
 			jsMTable
 		]
+	bootstrap_project_list=[]
+ 
+	java_project_list=[
+			jvPharmacyStore,
+			jvFileTransfer,
+		]
+	
+	context= {
+		'dj_project_list': dj_project_list,
+		'react_project_list': react_project_list,
+		'js_project_list' : js_project_list,
+		'bootstrap_project_list': bootstrap_project_list,
+		'java_project_list': java_project_list,
+	}
 
-	return render(request,'Portfolio.html',{ 'apps':apps} )
+	return render(request,'Portfolio.html',context)
 
 def services(request):
 	return render(request,'Services.html')
