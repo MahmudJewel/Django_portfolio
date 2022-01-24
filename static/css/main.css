@@ -705,8 +705,9 @@ nav{
 	padding-bottom: 5rem;
 
 	margin-top: 0.5rem;
-	border-radius: 50px;
-	box-shadow: 2px 2px 12px #737373;*/
+	/* border-radius: 50px; */
+	/* box-shadow: 2px 2px 12px #737373; */
+	z-index: 2;
 }
 
 #portfolio .top div{
@@ -727,6 +728,8 @@ nav{
 
 #portfolio .projects .screenshot{
 	position: relative;
+	justify-content: center;
+	text-align: center;
 }
 
 #portfolio .projects .screenshot .over{
@@ -752,17 +755,18 @@ nav{
 
 #portfolio .projects .screenshot:hover .over{
 	opacity: .5;
+	height: 75%;
 	transition: all 0.3s ease;
 }
 
 #portfolio img{
-	margin: 1rem 1rem;
+	margin: 2rem 1rem 0 1rem;
 }
 
 #portfolio .projects img{
 	height: 300px;
 	width: 300px;
-	border-radius: 50px;
+	border-radius: 50px 50px 0 0;
 	box-shadow: 2px 2px 12px #737373;
 }
 
