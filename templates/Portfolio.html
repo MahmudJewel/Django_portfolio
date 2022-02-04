@@ -51,6 +51,13 @@
               <a
                 class="tablinks btn btn-outline-primary m-1"
                 style="color: white"
+                onclick="openCity(event, 'vuengo')"
+              >
+                Django + Vuejs
+              </a>
+              <a
+                class="tablinks btn btn-outline-primary m-1"
+                style="color: white"
                 onclick="openCity(event, 'React')"
               >
                 React
@@ -80,7 +87,7 @@
           </div>
         </div>
       </div>
-      <!-- django project lis  -->
+      <!-- django project list  -->
       <div
         id="Python"
         class="tabcontent projects"
@@ -115,8 +122,44 @@
           {% endfor %}
         </div>
       </div>
+      
+      <!-- Django+Vuejs project list  -->
+      <div
+        id="vuengo"
+        class="tabcontent projects"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="projects" data-aos="fade-up" data-aos-delay="300">
+          {% for app in vuengo_project_list %}
+          <div class="screenshot">
+            <div class="over">
+              <a href="{{app.link}}" target="_blank"> {{app.title}} </a>
+              <p>{{app.desc}}</p>
+            </div>
+            <img src="{{app.img}}" />
+            <div
+              style="
+                margin: 0 1rem 0 1rem;
+                padding: 1rem;
+                border-radius: 0 0 25px 25px;
+                box-shadow: 2px 2px 12px #737373;
+                width: 300px;
+              "
+            >
+              <h6>{{app.title}}</h6>
+              <!-- <p>Django project</p> -->
+              <a href="{{app.link}}" target="_blank" class="btn btn-success"
+                >About</a
+              >
+            </div>
+          </div>
 
-      <!-- React project lis  -->
+          {% endfor %}
+        </div>
+      </div>
+      
+      <!-- React project list  -->
       <div
         id="React"
         class="tabcontent projects"

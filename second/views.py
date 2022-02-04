@@ -91,6 +91,20 @@ def portfolio(request):
 	djFamouseQuotes.desc="Django"
 	djFamouseQuotes.img='../static/img/project-img/dj-quotes.jpg'
 
+
+	# Django+Vuejs projects 
+	vuengoTodo=projects()
+	vuengoTodo.link= "https://github.com/MahmudJewel/Todo-DRF-Vuejs"
+	vuengoTodo.title="ToDo using Django, Vuejs & DRF"
+	vuengoTodo.desc="Django,Vuejs & DRF"
+	vuengoTodo.img='../static/img/project-img/vuengo-toDo.jpg'
+	
+	vuengoCRUD=projects()
+	vuengoCRUD.link= "https://github.com/MahmudJewel/CRUD-DRF-VUEJS"
+	vuengoCRUD.title="CRUD using Django, Vuejs & DRF"
+	vuengoCRUD.desc="Django,Vuejs & DRF"
+	vuengoCRUD.img='../static/img/project-img/vuengo-Crud.jpg'
+	
 	# react projects 
 	reactCal=projects()
 	reactCal.link= "https://github.com/MahmudJewel/react-calculator"
@@ -182,12 +196,17 @@ def portfolio(request):
 			djFamouseQuotes,
 			djStudentForm,
 		]
-	
+
+	vuengo_project_list=[
+			vuengoTodo,
+			vuengoCRUD,
+		]
+
 	react_project_list=[
 			reactCal,
 			reactForm,
 		]
- 
+
 	js_project_list=[
 			jsPortfolio,
 			jsBookList,
@@ -208,6 +227,7 @@ def portfolio(request):
 	
 	context= {
 		'dj_project_list': dj_project_list,
+		'vuengo_project_list': vuengo_project_list,
 		'react_project_list': react_project_list,
 		'js_project_list' : js_project_list,
 		'bootstrap_project_list': bootstrap_project_list,
