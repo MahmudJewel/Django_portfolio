@@ -91,6 +91,12 @@ def portfolio(request):
 	djFamouseQuotes.desc="Django"
 	djFamouseQuotes.img='../static/img/project-img/dj-quotes.jpg'
 
+	drfEcommerceBackend=projects()
+	drfEcommerceBackend.link= "https://github.com/MahmudJewel/E-commerce_backend"
+	drfEcommerceBackend.title="E-commerce Backend"
+	drfEcommerceBackend.desc="Django & Rest Framework"
+	drfEcommerceBackend.img='../static/img/project-img/drf-ecom-backend.jpg'
+
 
 	# Django+Vuejs projects 
 	vuengoTodo=projects()
@@ -187,6 +193,7 @@ def portfolio(request):
 	dj_project_list=[
 			djShoppingMall,
 			djBlog,
+			drfEcommerceBackend,
 			djGrocery,
 			djOnlineExam,
 			djTodo,
