@@ -98,7 +98,13 @@ def portfolio(request):
 	drfEcommerceBackend.img='../static/img/project-img/drf-ecom-backend.jpg'
 
 
-	# Django+Vuejs projects 
+	# Django+React / Vuejs projects
+	reangoTodo=projects()
+	reangoTodo.link= "https://github.com/MahmudJewel/Reango_task_management"
+	reangoTodo.title="Task mngmt using Django, React & DRF"
+	reangoTodo.desc="Django,React & DRF"
+	reangoTodo.img='../static/img/project-img/reango-Task.jpg'
+	
 	vuengoTodo=projects()
 	vuengoTodo.link= "https://github.com/MahmudJewel/Todo-DRF-Vuejs"
 	vuengoTodo.title="ToDo using Django, Vuejs & DRF"
@@ -204,7 +210,8 @@ def portfolio(request):
 			djStudentForm,
 		]
 
-	vuengo_project_list=[
+	react_vuengo_project_list=[
+			reangoTodo,
 			vuengoTodo,
 			vuengoCRUD,
 		]
@@ -234,7 +241,7 @@ def portfolio(request):
 	
 	context= {
 		'dj_project_list': dj_project_list,
-		'vuengo_project_list': vuengo_project_list,
+		'react_vuengo_project_list': react_vuengo_project_list,
 		'react_project_list': react_project_list,
 		'js_project_list' : js_project_list,
 		'bootstrap_project_list': bootstrap_project_list,
