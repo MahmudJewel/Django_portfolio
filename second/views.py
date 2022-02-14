@@ -124,6 +124,12 @@ def portfolio(request):
 	reactCal.desc="React"
 	reactCal.img='../static/img/project-img/react-calculator.jpg'
 
+	reactToDo_using_class=projects()
+	reactToDo_using_class.link= "https://github.com/MahmudJewel/React-Todo_using_class_component"
+	reactToDo_using_class.title="Todo using Class Component"
+	reactToDo_using_class.desc="React"
+	reactToDo_using_class.img='../static/img/project-img/react-todo-class-comp.jpg'
+	
 	reactForm=projects()
 	reactForm.link= "https://github.com/MahmudJewel/react-form"
 	reactForm.title="React Form"
@@ -218,6 +224,7 @@ def portfolio(request):
 
 	react_project_list=[
 			reactCal,
+			reactToDo_using_class,
 			reactForm,
 		]
 
