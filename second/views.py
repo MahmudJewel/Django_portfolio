@@ -225,13 +225,13 @@ def portfolio(request):
 	react_vuengo_project_list=[
 			reangoTodo,
 			vuengoTodo,
-			reactFormValidation,
 			vuengoCRUD,
 		]
 
 	react_project_list=[
 			reactCal,
 			reactToDo_using_class,
+			reactFormValidation,
 			reactForm,
 		]
 
