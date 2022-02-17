@@ -131,8 +131,8 @@ def portfolio(request):
 	reactToDo_using_class.img='../static/img/project-img/react-todo-class-comp.jpg'
 	
 	reactFormValidation=projects()
-	reactFormValidation.link= "https://github.com/MahmudJewel/react-form-validation"
-	reactFormValidation.title="Form validation using reactjs"
+	reactFormValidation.link= "https://github.com/MahmudJewel/react-custom-form-validation"
+	reactFormValidation.title="Custom Form validation using reactjs"
 	reactFormValidation.desc="React"
 	reactFormValidation.img='../static/img/project-img/react-form-validation.jpg'
 	
