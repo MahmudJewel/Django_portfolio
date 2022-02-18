@@ -123,6 +123,12 @@ def portfolio(request):
 	reactCal.title="React Calculator"
 	reactCal.desc="React"
 	reactCal.img='../static/img/project-img/react-calculator.jpg'
+	
+	reactAutoSearch=projects()
+	reactAutoSearch.link= "https://github.com/MahmudJewel/react-auto_complete_text"
+	reactAutoSearch.title="Auto complete search using React"
+	reactAutoSearch.desc="React"
+	reactAutoSearch.img='../static/img/project-img/react-auto-search.jpg'
 
 	reactToDo_using_class=projects()
 	reactToDo_using_class.link= "https://github.com/MahmudJewel/React-Todo_using_class_component"
@@ -230,6 +236,7 @@ def portfolio(request):
 
 	react_project_list=[
 			reactCal,
+			reactAutoSearch,
 			reactToDo_using_class,
 			reactFormValidation,
 			reactForm,
