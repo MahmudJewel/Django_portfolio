@@ -118,6 +118,12 @@ def portfolio(request):
 	vuengoCRUD.img='../static/img/project-img/vuengo-Crud.jpg'
 	
 	# react projects 
+	reactMoviesPortal=projects()
+	reactMoviesPortal.link= "https://github.com/MahmudJewel/Movies-Portal"
+	reactMoviesPortal.title="The Movies Portal using React"
+	reactMoviesPortal.desc="React"
+	reactMoviesPortal.img='../static/img/project-img/react-movies-portal.jpg'
+
 	reactCal=projects()
 	reactCal.link= "https://github.com/MahmudJewel/react-calculator"
 	reactCal.title="React Calculator"
@@ -235,6 +241,7 @@ def portfolio(request):
 		]
 
 	react_project_list=[
+			reactMoviesPortal,
 			reactCal,
 			reactAutoSearch,
 			reactToDo_using_class,
