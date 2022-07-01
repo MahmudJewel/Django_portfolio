@@ -99,6 +99,12 @@ def portfolio(request):
 
 
 	# Django+React / Vuejs projects
+	reangoBlog=projects()
+	reangoBlog.link= "https://github.com/MahmudJewel/BlogWithLikeComment-DRF_Reactjs"
+	reangoBlog.title="Blog with like,Comment using Django, React & DRF"
+	reangoBlog.desc="Django,React & DRF"
+	reangoBlog.img='../static/img/project-img/reango-Blog.jpg'
+
 	reangoCalc=projects()
 	reangoCalc.link= "https://github.com/MahmudJewel/Simple-calculator"
 	reangoCalc.title="Emoji-Based Calculator using Django, React & DRF"
@@ -247,6 +253,7 @@ def portfolio(request):
 		]
 
 	react_vuengo_project_list=[
+			reangoBlog,
 			reangoCalc,
 			reangoTodo,
 			vuengoTodo,
