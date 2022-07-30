@@ -6,10 +6,12 @@
 -->
 {% load static %}
 <html lang="en">
-	<head >
-		{% include 'head.html' %}
-	</head>
-	<body id="bd"  style="font-family: 'Sansita Swashed', cursive;
+
+<head>
+	{% include 'head.html' %}
+</head>
+
+<body id="bd" style="font-family: 'Sansita Swashed', cursive;
 		color: white;
 		background: #151515 url('../static/img/bg.jpg'); /*no-repeat center top;*/
 		background-repeat: repeat;
@@ -19,99 +21,105 @@
 		width: 100%;
 		height: 100%;
 		min-height: auto;">
-		
-		<!--===================== start  Navigations   =========================-->
-		<nav>{% include 'nav.html' %}</nav>
-		<!--===================== end  Navigations   =========================-->
-		<!--===================== start  About   =========================-->
-		<section id="about">
-			<div class="overall">
-				<div class="left-right1">
-					<div class="intro_pic" >
-						<!--data-aos="fade-up" data-aos-delay="300" -->
-						<img src="../static/img/mypic2.JPG" alt="mypic">
-					</div>
-					<div class="intro" >
-						<h5>About</h5>
-						<h1>Let me introduce myself</h1>
-						<p>Highly motivated to constantly develop my skills, learn new technology and grow professionally.</p>
-						<div class="name">
-							<div>
-								<strong>Name: </strong>
-								<span>Jewel Mahmud</span>
-							</div>
-							<div>
-								<strong>Birth date: </strong>
-								<span>17th may, 1997</span>
-							</div>
+
+	<!--===================== start  Navigations   =========================-->
+	<nav>{% include 'nav.html' %}</nav>
+	<!--===================== end  Navigations   =========================-->
+	<!--===================== start  About   =========================-->
+	<section id="about">
+		<div class="overall">
+			<div class="left-right1">
+				<div class="intro_pic">
+					<!--data-aos="fade-up" data-aos-delay="300" -->
+					<img src="../static/img/mypic2.JPG" alt="mypic">
+				</div>
+				<div class="intro">
+					<h5>About</h5>
+					<h1>Let me introduce myself</h1>
+					<p>Highly motivated to constantly develop my skills, learn new technology and grow professionally.
+					</p>
+					<div class="name">
+						<div>
+							<strong>Name: </strong>
+							<span>Jewel Mahmud</span>
+						</div>
+						<div>
+							<strong>Birth date: </strong>
+							<span>17th may, 1997</span>
+						</div>
 						<!--
 							<div>
 								<strong>Job: </strong>
 								<span>Null</span>
 							</div>
 						-->
-							<div>
-								<strong>Email: </strong>
-								<span>jmbengal.mbstu@gmail.com</span>
-							</div>
+						<div>
+							<strong>Email: </strong>
+							<span>jmbengal.mbstu@gmail.com</span>
 						</div>
 					</div>
 				</div>
-				<div class="left-right2" >
-					<div class="proficiency">
-						<h3>Proficiency</h3>
-						<ul>
-							{% for prof in proficiency %}
-							<li>
-								<span>
-									{{prof}}
-								</span>
-							</li>
-							{% endfor %}
-						</ul>
-					</div>
-					<div class="skill" >
-						<h3>Skills</h3>
-						<ul>
-							<li>
-								<div><strong>Python : 95%</strong></div>
-								<progress value="95" max="100">
-								</li>
-								<li>
-									<div><strong>Django : 90%</strong></div>
-									<progress value="90" max="100">
-									</li>
-									<li>
-										<div><strong>Javascript : 60%</strong></div>
-										<progress value="60" max="100">
-										</li>
-										<li>
-											<div><strong>HTML/CSS : 80%</strong></div>
-											<progress value="80" max="100">
-											</li>
-											<li>
-												<div><strong>CSS(BOOTSTRAP): 80%</strong></div>
-												<progress value="80" max="100">
-												</li>
-												<li>
-													<div><strong>Java : 50%</strong></div>
-													<progress value="50" max="100">
-													</li>
-													
-												</ul>
-											</div>
-										</div>
-										<div class="btn-part" >
-											<ul>
-												<li><a href="#nav">Get CV</a></li>
-												<li><a href="/contact">Hire Me</a></li>
-											</ul>
-										</div>
-										
-									</div>
+			</div>
+			<div class="left-right2">
+				<div class="proficiency">
+					<h3>Proficiency</h3>
+					<ul>
+						{% for prof in proficiency %}
+						<li>
+							<span>
+								{{prof}}
+							</span>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="skill">
+					<h3>Skills</h3>
+					<ul>
+						<li>
+							<div><strong>Python : 95%</strong></div>
+							<progress value="95" max="100">
+						</li>
+						<li>
+							<div><strong>Django : 90%</strong></div>
+							<progress value="90" max="100">
+						</li>
+						<li>
+							<div><strong>React : 80%</strong></div>
+							<progress value="80" max="100">
+						</li>
+						<li>
+							<div><strong>Javascript : 80%</strong></div>
+							<progress value="80" max="100">
+						</li>
+						<li>
+							<div><strong>HTML/CSS : 90%</strong></div>
+							<progress value="80" max="100">
+						</li>
+						<li>
+							<div><strong>CSS(BOOTSTRAP): 95%</strong></div>
+							<progress value="95" max="100">
+						</li>
+						<li>
+							<div><strong>Java : 60%</strong></div>
+							<progress value="60" max="100">
+						</li>
 
-									<!--================== Start Next-Previous =====================-->
-		<div class="f-social" style="padding-top: 100px;"> <!--I called footer to design -->
+					</ul>
+				</div>
+			</div>
+			<div class="btn-part">
+				<ul>
+					<li><a href="#nav">Get CV</a></li>
+					<li><a href="/contact">Hire Me</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!--================== Start Next-Previous =====================-->
+		<div class="f-social" style="padding-top: 100px;">
+			<!--I called footer to design -->
 			<ul>
 				<li>
 					<a href="/" class="previous" title="previous">
@@ -128,10 +136,11 @@
 			</ul>
 		</div>
 		<!--=================== End Next-Previous ======================-->
-								</section>
-								<!--===================== end  About  =========================-->
-								<div>
-									{% include 'footer.html' %}
-								</div>
-							</body>
-						</html>
+	</section>
+	<!--===================== end  About  =========================-->
+	<div>
+		{% include 'footer.html' %}
+	</div>
+</body>
+
+</html>
